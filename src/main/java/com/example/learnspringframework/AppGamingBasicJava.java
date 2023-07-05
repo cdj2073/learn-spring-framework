@@ -1,14 +1,13 @@
 package com.example.learnspringframework;
 
-import com.example.learnspringframework.game.GameRunner;
-import com.example.learnspringframework.game.MarioGame;
-import com.example.learnspringframework.game.SuperContraGame;
+import com.example.learnspringframework.game.*;
 
 public class AppGamingBasicJava {
     public static void main(String[] args) {
-        var marioGame = new MarioGame();
-        var superContarGame = new SuperContraGame();
-        var gameRunner = new GameRunner(superContarGame);
+        // var game = new MarioGame();
+        // var game = new SuperContraGame();
+        var game = new PacmanGame();
+        var gameRunner = new GameRunner(game);
         gameRunner.run();
     }
 }
